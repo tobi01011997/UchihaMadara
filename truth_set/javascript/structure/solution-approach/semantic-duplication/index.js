@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var userService_1 = require("./services/userService");
+var orderService_1 = require("./services/orderService");
+var userService = new userService_1.UserService();
+var orderService = new orderService_1.OrderService();
+userService.addUser('Alice');
+userService.addUser('Bob');
+console.log('\n--- Users List ---');
+userService.listUsers();
+orderService.addOrder('Laptop');
+orderService.addOrder('Smartphone');
+console.log('\n--- Orders List ---');
+orderService.listOrders();
