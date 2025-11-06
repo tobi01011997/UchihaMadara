@@ -1,0 +1,29 @@
+[
+  {
+    "path": "truth_set/go/logic/performance/compute.go",
+    "issues": [
+      {
+        "issue": "Re-calculating compute(num) multiple times in the loop leads to redundant computations, causing unnecessary performance overhead.",
+        "severity": "HIGH"
+      }
+    ]
+  },
+  {
+    "path": "truth_set/go/logic/performance/emailsToFind.go", 
+    "issues": [
+      {
+        "issue": "Inefficient nested loop approach for email search, causing O(n) complexity for each email lookup.",
+        "severity": "HIGH"
+      }
+    ]
+  },
+  {
+    "path": "truth_set/go/logic/performance/processData.go",
+    "issues": [
+      {
+        "issue": "Inefficient approach of copying large slice with make() and copy(), resulting in high memory usage and performance overhead.",
+        "severity": "MEDIUM"
+      }
+    ]
+  }
+]
