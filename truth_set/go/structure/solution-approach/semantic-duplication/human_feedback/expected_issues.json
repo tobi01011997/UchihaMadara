@@ -1,0 +1,12 @@
+[
+  {
+    "path": "truth_set/go/structure/solution-approach/semantic-duplication/main/services/orderService.go",
+    "issues": [
+      {
+        "issue": "The `OrderService` struct has a redundant `formatDate` method that duplicates functionality found in the common utility `FormatDate` function in `utils` package. This causes code duplication and increases the likelihood of inconsistent date formatting if one function is updated but not the other.",
+        "severity": "MEDIUM"
+      }
+    ]
+  }
+]
+\ No newline at end of file
