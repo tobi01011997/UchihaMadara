@@ -1,0 +1,16 @@
+[
+  {
+    "path": "truth_set/go/visual-representation/bracket-usage/brackets.go",
+    "issues": [
+      {
+        "issue": "The condition in applyDiscount function lacks parentheses around the logical OR expression, making operator precedence unclear and potentially causing incorrect discount application.",
+        "severity": "MEDIUM"
+      },
+      {
+        "issue": "The calculation in calculateTotalPrice uses multiplication before addition without clarifying parentheses, which may lead to incorrect total price calculation.",
+        "severity": "HIGH"
+      }
+    ]
+  }
+]
+\ No newline at end of file
