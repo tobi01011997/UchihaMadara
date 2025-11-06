@@ -1,0 +1,12 @@
+[
+  {
+    "path": "truth_set/go/check/function/getUserName.go",
+    "issues": [
+      {
+        "issue": "Dereferencing potentially nil pointer result.Name without checking, risking a runtime panic.",
+        "severity": "HIGH"
+      }
+    ]
+  }
+]
+\ No newline at end of file

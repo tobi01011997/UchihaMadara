@@ -1,0 +1,19 @@
+[
+  {
+    "path": "src/typescript/documentation/textual/naming/legacy.ts",
+    "issues": [
+      {
+        "issue": "Property names like 'nm' and 'a' are not descriptive, making the code harder to understand.",
+        "severity": "MEDIUM"
+      },
+      {
+        "issue": "Function name 'proc' doesn't convey its purpose clearly, making the code less readable.",
+        "severity": "MEDIUM"
+      },
+      {
+        "issue": "Input parameter 'u' is vague and doesn't describe its intended use or structure.",
+        "severity": "MEDIUM"
+      }
+    ]
+  }
+]

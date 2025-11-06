@@ -1,0 +1,21 @@
+[
+  {
+    "path": "truth_set/go/resource/variable-initialisation/calculateDiscount.go",
+    "issues": [
+      {
+        "issue": "Variable 'discount' is declared without an initial value. While it will be initialized to 0 in Go, it would be clearer to explicitly initialize it for better code readability.",
+        "severity": "LOW"
+      }
+    ]
+  },
+  {
+    "path": "truth_set/go/resource/variable-initialisation/compareScores.go",
+    "issues": [
+      {
+        "issue": "Variable 'playerScore' is declared without an initial value. While it will be initialized to 0 in Go, it would be clearer to explicitly initialize it for better code readability and to avoid potential confusion.",
+        "severity": "LOW"
+      }
+    ]
+  }
+]
+\ No newline at end of file
