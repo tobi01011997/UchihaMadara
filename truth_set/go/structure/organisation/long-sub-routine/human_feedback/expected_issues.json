@@ -1,0 +1,12 @@
+[
+  {
+    "path": "truth_set/go/structure/organisation/long-sub-routine/ReportService.go",
+    "issues": [
+      {
+        "issue": "The `generateMonthlyReport` function is performing multiple tasks, including filtering active users, calculating totals, file operations, and sending notifications. This violates the Single Responsibility Principle.",
+        "severity": "LOW"
+      }
+    ]
+  }
+]
+\ No newline at end of file
