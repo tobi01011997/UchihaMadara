@@ -1,0 +1,42 @@
+[
+  {
+    "path": "truth_set/go/logic/wrong_location/configManager.go",
+    "issues": [
+      {
+        "issue": "Race condition: Accessing config map immediately after getting the instance, while loadConfig goroutine has not yet completed.",
+        "severity": "HIGH"
+      },
+      {
+        "issue": "Nil map access: Accessing config[\"apiUrl\"] before loadConfig completes initialization of the map, which may result in nil pointer dereference.",
+        "severity": "HIGH"
+      }
+    ]
+  },
+  {
+    "path": "truth_set/go/logic/wrong_location/dataFetcher.go", 
+    "issues": [
+      {
+        "issue": "Premature execution: Launches fetchData goroutine within NewUserProfile constructor, which might not complete before other methods are called.",
+        "severity": "HIGH"
+      },
+      {
+        "issue": "Nil map access: Accessing profile.data immediately after instantiation results in nil map access, since fetchData goroutine hasn't completed.",
+        "severity": "HIGH" 
+      }
+    ]
+  },
+  {
+    "path": "truth_set/go/logic/wrong_location/writeAndRead.go",
+    "issues": [
+      {
+        "issue": "Race condition: Calls ReadFile without ensuring the WriteFile goroutine has completed.",
+        "severity": "HIGH"
+      },
+      {
+        "issue": "File access error: ReadFile might access file before WriteFile goroutine has finished writing, leading to errors or incomplete data.",
+        "severity": "HIGH"
+      }
+    ]
+  }
+]
+\ No newline at end of file
