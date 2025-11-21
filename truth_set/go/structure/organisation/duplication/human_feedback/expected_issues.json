@@ -1,0 +1,28 @@
+[
+  {
+    "path": "truth_set/go/structure/organisation/duplication/UserService.go",
+    "issues": [
+      {
+        "issue": "CreateUser and AddUser are identical functions with duplicated logic. Both create a user, generate an ID, save to the database, and return the user.",
+        "severity": "LOW"
+      },
+      {
+        "issue": "UpdateUserEmail and UpdateUserPhone share duplicated logic for updating common properties (UpdatedAt, database.Save), increasing the risk of inconsistency.",
+        "severity": "LOW"
+      },
+      {
+        "issue": "IsAdult and CanVote both use the same comparison (age >= 18), leading to duplicated logic that could be consolidated.",
+        "severity": "LOW"
+      },
+      {
+        "issue": "The comparison logic in IsAdult, CanVote, and CanDrink is repeated, potentially leading to errors if age-based criteria change in the future.",
+        "severity": "LOW"
+      },
+      {
+        "issue": "The use of identical rate variables (discountRate and taxRate) in CalculateDiscount and CalculateTax without clarity on their intended purpose could lead to confusion or bugs if one rate changes independently.",
+        "severity": "LOW"
+      }
+    ]
+  }
+]
+\ No newline at end of file

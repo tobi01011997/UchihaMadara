@@ -1,0 +1,19 @@
+[
+  {
+    "path": "truth_set/go/check/variable/fetchAndProcessUser.go",
+    "issues": [
+      {
+        "issue": "Response status code is not checked before processing response body, potentially processing error responses",
+        "severity": "MEDIUM"
+      },
+      {
+        "issue": "JSON unmarshaling into User struct does not validate required fields, risking nil/empty values",
+        "severity": "HIGH"
+      },
+      {
+        "issue": "User.Name and User.Email are used without checking for empty strings, which could cause display issues",
+        "severity": "MEDIUM"
+      }
+    ]
+  }
+]

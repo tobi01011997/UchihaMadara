@@ -1,0 +1,16 @@
+[
+  {
+    "path": "truth_set/go/visual-representation/grouping/grouping.go",
+    "issues": [
+      {
+        "issue": "Struct fields are declared between methods, with the client field separated by a blank line, making it harder to identify all struct-level fields quickly.",
+        "severity": "LOW"
+      },
+      {
+        "issue": "Methods serving different functionalities (creation, deletion, fetching from API) are mixed without clear separation or grouping, reducing readability and maintainability.",
+        "severity": "LOW"
+      }
+    ]
+  }
+]
+\ No newline at end of file

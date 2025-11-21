@@ -1,0 +1,20 @@
+[
+  {
+    "path": "truth_set/go/structure/organisation/dead-code/OrderProcessor.go",
+    "issues": [
+      {
+        "issue": "The condition 'if (true)' in 'ProcessOrder' always executes 'applyTax', making the 'applyDiscount' method never be called.",
+        "severity": "MEDIUM"
+      },
+      {
+        "issue": "The condition 'if (false)' in 'ProcessOrder' will never execute, causing the 'sendConfirmationEmail' method to never run.",
+        "severity": "MEDIUM"
+      },
+      {
+        "issue": "The field 'errorMessage' in struct 'OrderProcessor' is declared but never used.",
+        "severity": "LOW"
+      }
+    ]
+  }
+]
+\ No newline at end of file

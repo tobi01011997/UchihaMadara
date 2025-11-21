@@ -1,0 +1,12 @@
+[
+  {
+    "path": "src/go/structure/solution-approach/change-function/main/app.go", 
+    "issues": [
+      {
+        "issue": "Use of deprecated `Query` function in `getAllUsers` and `addUser` functions. This function is marked for removal in future releases, and its usage may lead to maintenance issues as support for it is phased out.",
+        "severity": "HIGH"
+      }
+    ]
+  }
+]
+\ No newline at end of file

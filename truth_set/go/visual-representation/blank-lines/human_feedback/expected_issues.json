@@ -1,0 +1,12 @@
+[
+  {
+    "path": "truth_set/go/visual-representation/blank-lines/blank.go",
+    "issues": [
+      {
+        "issue": "Multiple unnecessary blank lines exist between method definitions and within the Add method, which reduces code readability and consistency.",
+        "severity": "LOW"
+      }
+    ]
+  }
+]
+\ No newline at end of file

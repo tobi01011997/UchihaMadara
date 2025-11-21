@@ -1,0 +1,16 @@
+[
+  {
+    "path": "truth_set/go/resource/data-resource-management/fetchUsers.go",
+    "issues": [
+      {
+        "issue": "Rows closure: rows.Close() is not called after data processing to release the database cursor.",
+        "severity": "MEDIUM"
+      },
+      {
+        "issue": "Connection termination: db.Close() is not invoked to close the database connection, ensuring that resources are freed.",
+        "severity": "HIGH"
+      }
+    ]
+  }
+]
+\ No newline at end of file
