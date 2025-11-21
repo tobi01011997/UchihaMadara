@@ -1,0 +1,12 @@
+[
+  {
+    "path": "truth_set/go/visual-representation/long-line/long.go",
+    "issues": [
+      {
+        "issue": "The URL construction in CreateUser method uses a long fmt.Sprintf with multiple query parameters directly in the URL string, making it hard to read and maintain",
+        "severity": "LOW"
+      }
+    ]
+  }
+]
+\ No newline at end of file
