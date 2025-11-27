@@ -1,0 +1,16 @@
+[
+  {
+    "path": "truth_set/go/structure/solution-approach/standard-method/OrderProcessor.go",
+    "issues": [
+      {
+        "issue": "Lack of readability due to magic numbers (5, 100, 10, and 50) which lack context or documentation, making it unclear what these values represent in the applyDiscounts function.",
+        "severity": "MEDIUM"
+      },
+      {
+        "issue": "Maintainability problems caused by hard-coded values in applyDiscounts function, requiring developers to search through the code to update all instances if these values need to change.",
+        "severity": "MEDIUM"
+      }
+    ]
+  }
+]
+\ No newline at end of file

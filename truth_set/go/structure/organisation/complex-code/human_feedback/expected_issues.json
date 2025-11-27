@@ -1,0 +1,12 @@
+[
+  {
+    "path": "truth_set/go/structure/organisation/complex-code/e-commerce.go",
+    "issues": [
+      {
+        "issue": "The 'ProcessOrder' function is too complex and performs multiple tasks such as handling customer information, item processing, coupon validation, and shipping. It should be refactored into smaller, more manageable functions.",
+        "severity": "HIGH"
+      }
+    ]
+  }
+]
+\ No newline at end of file

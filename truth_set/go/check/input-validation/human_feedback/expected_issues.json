@@ -1,0 +1,12 @@
+[
+  {
+    "path": "truth_set/go/check/input-validation/processUserAge.go",
+    "issues": [
+      {
+        "issue": "Error from strconv.ParseFloat is ignored, allowing invalid string inputs to be silently converted to 0.",
+        "severity": "HIGH"
+      }
+    ]
+  }
+]
+\ No newline at end of file

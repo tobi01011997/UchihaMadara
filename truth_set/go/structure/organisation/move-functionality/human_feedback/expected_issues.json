@@ -1,0 +1,16 @@
+[
+  {
+    "path": "truth_set/go/structure/organisation/move-functionality/UserService.go",
+    "issues": [
+      {
+        "issue": "OrderService handles both order management and notification responsibilities, violating the Single Responsibility Principle.",
+        "severity": "MEDIUM"
+      },
+      {
+        "issue": "The notification logic is tightly coupled with the order processing functionality, making it difficult to modify or reuse independently.",
+        "severity": "MEDIUM"
+      }
+    ]
+  }
+]
+\ No newline at end of file
