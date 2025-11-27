@@ -1,0 +1,48 @@
+[
+  {
+    "path": "truth_set/go/logic/compute/calculateCircleArea.go",
+    "issues": [
+      {
+        "issue": "The formula used for calculating the area of a circle is incorrect. It uses the diameter squared instead of the radius squared, leading to an incorrect result.",
+        "severity": "HIGH"
+      }
+    ]
+  },
+  {
+    "path": "truth_set/go/logic/compute/calculateTotalCompensation.go", 
+    "issues": [
+      {
+        "issue": "The calculation of `tax` is incorrect, as it uses the `bonus` amount rather than the total compensation (base salary plus bonus). The correct calculation for tax should be `tax = (employee.BaseSalary + bonus) * employee.TaxPercentage`.",
+        "severity": "HIGH"
+      }
+    ]
+  },
+  {
+    "path": "truth_set/go/logic/compute/calculateAverage.go",
+    "issues": [
+      {
+        "issue": "The integer division results in the loss of precision for the average calculation. For an accurate average, floating-point division should be used.",
+        "severity": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "path": "truth_set/go/logic/compute/calculateCart.go",
+    "issues": [
+      {
+        "issue": "The function accepts string inputs for prices, but it performs string concatenation instead of numeric addition, which leads to incorrect results.",
+        "severity": "HIGH"
+      }
+    ]
+  },
+  {
+    "path": "truth_set/go/logic/compute/calculateTotalPrice.go",
+    "issues": [
+      {
+        "issue": "The formula incorrectly adds `tax` directly to `1 - discount`, which may lead to incorrect total price calculations. Taxes should typically be applied to the discounted price rather than summed with the discount.",
+        "severity": "MEDIUM"
+      }
+    ]
+  }
+]
+\ No newline at end of file
