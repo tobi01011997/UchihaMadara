@@ -1,0 +1,12 @@
+[
+  {
+    "path": "truth_set/go/structure/organisation/consistency/supermarket.go",
+    "issues": [
+      {
+        "issue": "Inconsistent method names across the structs. For example, methods like 'GetUserProfile' and 'CheckUserEligibility' in UserService, 'GetProduct' and 'ValidateProductStock' in ProductService, and 'RetrieveOrder' and 'VerifyOrderStatus' in OrderService follow different naming conventions for similar functionality. This inconsistency makes the code harder to navigate and maintain, and increases cognitive load when understanding the purpose of each method.",
+        "severity": "MEDIUM"
+      }
+    ]
+  }
+]
+\ No newline at end of file
