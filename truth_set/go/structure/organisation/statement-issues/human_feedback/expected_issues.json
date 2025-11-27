@@ -1,0 +1,25 @@
+[
+  {
+    "path": "truth_set/go/structure/organisation/statement-issues/calculateTotalPrice.go",
+    "issues": [
+      {
+        "issue": "The variables `subtotal` and `total` are declared separately from their initialization, which is unnecessary and inefficient.",
+        "severity": "LOW"
+      }
+    ]
+  },
+  {
+    "path": "truth_set/go/structure/organisation/statement-issues/processOrder.go",
+    "issues": [
+      {
+        "issue": "The total price calculation combines multiple operations (summing items, applying discount, and calculating tax) into one complex statement.",
+        "severity": "MEDIUM"
+      },
+      {
+        "issue": "The discount amount (50) is a magic number, making the code less flexible and harder to understand. It should be defined as a constant or parameter.",
+        "severity": "MEDIUM"
+      }
+    ]
+  }
+]
+\ No newline at end of file
