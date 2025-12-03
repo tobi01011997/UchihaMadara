@@ -1,6 +1,6 @@
 function calculateCircleArea(radius: number): number {
     const diameter = radius * 2;
-    return Math.PI * diameter * diameter;
+    return Math.PI * radius * radius;
 }
 
 const radius = 5;
