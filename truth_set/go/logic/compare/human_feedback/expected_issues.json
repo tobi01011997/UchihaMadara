@@ -1,0 +1,39 @@
+[
+  {
+    "path": "truth_set/go/logic/compare/findMaximum.go",
+    "issues": [
+      {
+        "issue": "Incorrect comparison logic in the `for` loop: `arr[0]` is compared with `arr[i]` instead of `max` with `arr[i]`, resulting in incorrect maximum calculation.",
+        "severity": "HIGH"
+      }
+    ]
+  },
+  {
+    "path": "truth_set/go/logic/compare/isAdult.go", 
+    "issues": [
+      {
+        "issue": "Omitted comparison in the `if` statement: `age` should be explicitly compared to a threshold (e.g., `age >= 18`) to determine adulthood. Without this, the function will return `false` for `age = 0` but `true` for any positive number, which is incorrect logic.",
+        "severity": "HIGH"
+      }
+    ]
+  },
+  {
+    "path": "truth_set/go/logic/compare/isEqual.go",
+    "issues": [
+      {
+        "issue": "Type conversion and comparison may lead to unexpected behavior when comparing different types. The function should handle type checking more strictly.",
+        "severity": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "path": "truth_set/go/logic/compare/compareTypes.go",
+    "issues": [
+      {
+        "issue": "No proper type checking is performed when comparing string with other types. The function should handle type conversions more carefully to avoid unexpected behavior.",
+        "severity": "MEDIUM"
+      }
+    ]
+  }
+]
+\ No newline at end of file
